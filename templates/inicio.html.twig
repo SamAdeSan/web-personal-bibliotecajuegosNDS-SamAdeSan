@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block title %} Inicio - Biblioteca de juegos de Nintendo DS {% endblock %}
+{% block body %}
+    <h1>Biblioteca de juegos de Nintendo DS</h1>
+    <h2>¡Bienvenido a mi biblioteca de juegos de Nintendo DS!</h2>
+    <p>Página de inicio</p>
+    {% for juego in juegos %}
+        {{ include ('partials/datos_contacto.html.twig', {'juego': juego})}}
+    {% endfor %}
+{% endblock %}

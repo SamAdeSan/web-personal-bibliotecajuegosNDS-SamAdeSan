@@ -1,0 +1,8 @@
+<ul>
+    <li><strong>{{ juego.nombre }}</strong></li>
+    <li><strong>Teléfono</strong>: {{ juego.genero }}</li>
+    {% if juego.biblioteca %}
+    <li><strong>Biblioteca</strong>: {{ juego.biblioteca.nombre }}</li>
+    {% endif %}
+    <li><strong>Fecha de Lanzamiento:</strong>: {{ juego.fechaLanzamiento }}</li>
+</ul>

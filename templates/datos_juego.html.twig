@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block title %} Datos del juego {% endblock %}
+{% block body %}
+    <h1>Datos del juego</h1>
+    {% if juego %}
+        {{ include ('partials/lista_datos_juego.html.twig', { 'juego': juego }) }}
+    {% else %}
+        <p>Juego no encontrado</p>
+    {% endif %}
+{% endblock %}
